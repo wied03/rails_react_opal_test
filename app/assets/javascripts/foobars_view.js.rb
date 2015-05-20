@@ -1,20 +1,37 @@
 require 'react'
 
 class HelloMessage
-  def initialize(props)
-    puts props
+  include React::Component
+  
+  MSG = {great: 'Cool!', bad: 'Cheer up!'}
+
+  define_state(:foo) { "Default greeting" }
+  
+  before_mount do
+    self.foo = "#{self.foo}: #{MSG[params[:mood]]}"
   end
 
-  def component_will_mount
-    puts "will mount!"
+  after_mount :log
+
+  def log
+    puts "mounted!"
   end
 
   def render
-    React.create_element("div") { "Hello #{self.props[:name]}!" }
+    div do
+      span { self.foo + " #{params[:name]}!" }
+    end
   end
 end
 
+class App
+  include React::Component
+
+  def render
+    present HelloMessage, name: 'John', mood: 'great'
+  end
+end
 
 Document.ready? do
-  React.render(React.create_element(HelloMessage, name: 'John'), `document.body`)
+  React.render(React.create_element(App), `document.body`)
 end
