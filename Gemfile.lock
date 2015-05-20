@@ -1,0 +1,146 @@
+GIT
+  remote: https://github.com/opal/opal-jquery.git
+  revision: 7b5c300533641e08de503e06e0d1ac40c024f2a3
+  specs:
+    opal-jquery (0.3.0)
+      opal (>= 0.7.0, < 0.9.0)
+
+GIT
+  remote: https://github.com/opal/opal-rails.git
+  revision: f6da4a9f01d802964e76bda0b6e157219f59277e
+  specs:
+    opal-rails (0.7.1)
+      jquery-rails
+      opal (~> 0.8.0.beta)
+      opal-activesupport (>= 0.0.5)
+      opal-jquery (~> 0.3.0)
+      opal-rspec (~> 0.4.2)
+      rails (>= 3.2, < 5.0)
+
+GIT
+  remote: https://github.com/opal/opal.git
+  revision: 9933c666c7dd276fd7d5ee601f828adb37468672
+  specs:
+    opal (0.8.0.beta1)
+      hike (~> 1.2)
+      sourcemap (~> 0.1.0)
+      sprockets (~> 3.1)
+      tilt (~> 1.4)
+
+GIT
+  remote: https://github.com/wied03/opal-rspec.git
+  revision: e12bdab34480f598a2db25cf988c1b3a3368dd4c
+  branch: opal-0.8-other/rspec-3.1
+  specs:
+    opal-rspec (0.4.2)
+      opal (>= 0.7.0, < 0.9)
+
+GIT
+  remote: https://github.com/wied03/react.rb.git
+  revision: c146a6ef646b4d2c379030b8e5e960bdb4f8b8de
+  branch: react-v0.13
+  specs:
+    react.rb (0.3.0)
+      opal-activesupport (~> 0)
+      react-jsx (~> 0.8.0)
+      react-source (~> 0.13)
+      sprockets (~> 3.1)
+      therubyracer (~> 0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionmailer (4.1.8)
+      actionpack (= 4.1.8)
+      actionview (= 4.1.8)
+      mail (~> 2.5, >= 2.5.4)
+    actionpack (4.1.8)
+      actionview (= 4.1.8)
+      activesupport (= 4.1.8)
+      rack (~> 1.5.2)
+      rack-test (~> 0.6.2)
+    actionview (4.1.8)
+      activesupport (= 4.1.8)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+    activemodel (4.1.8)
+      activesupport (= 4.1.8)
+      builder (~> 3.1)
+    activerecord (4.1.8)
+      activemodel (= 4.1.8)
+      activesupport (= 4.1.8)
+      arel (~> 5.0.0)
+    activesupport (4.1.8)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+    arel (5.0.1.20140414130214)
+    builder (3.2.2)
+    erubis (2.7.0)
+    execjs (2.5.2)
+    hike (1.2.3)
+    i18n (0.7.0)
+    jquery-rails (3.1.2)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
+    json (1.8.2)
+    libv8 (3.16.14.7)
+    mail (2.6.3)
+      mime-types (>= 1.16, < 3)
+    mime-types (2.5)
+    minitest (5.6.1)
+    opal-activesupport (0.1.0)
+      opal (>= 0.5.0, < 1.0.0)
+    rack (1.5.3)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rails (4.1.8)
+      actionmailer (= 4.1.8)
+      actionpack (= 4.1.8)
+      actionview (= 4.1.8)
+      activemodel (= 4.1.8)
+      activerecord (= 4.1.8)
+      activesupport (= 4.1.8)
+      bundler (>= 1.3.0, < 2.0)
+      railties (= 4.1.8)
+      sprockets-rails (~> 2.0)
+    railties (4.1.8)
+      actionpack (= 4.1.8)
+      activesupport (= 4.1.8)
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
+    rake (10.4.2)
+    react-jsx (0.8.0)
+      execjs (>= 2.0.2)
+      json (>= 1.8.0)
+      react-source (>= 0.4.1)
+    react-source (0.13.3)
+    ref (1.0.5)
+    sourcemap (0.1.1)
+    sprockets (3.1.0)
+      rack (~> 1.0)
+    sprockets-rails (2.3.1)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      sprockets (>= 2.8, < 4.0)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
+    thor (0.19.1)
+    thread_safe (0.3.5)
+    tilt (1.4.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  opal!
+  opal-jquery!
+  opal-rails!
+  opal-rspec!
+  rails (= 4.1.8)
+  react.rb!
