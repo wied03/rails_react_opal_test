@@ -14,3 +14,4 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
+gem 'rails-assets-es5-shim', '= 4.0.5', source: 'https://rails-assets.org'
