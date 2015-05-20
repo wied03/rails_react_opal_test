@@ -20,5 +20,7 @@ module RailsTest
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.opal.source_map_enabled = false
+    # Without this, React source won't be available
+    Opal.append_path Opal::React.bundled_path
   end
 end
