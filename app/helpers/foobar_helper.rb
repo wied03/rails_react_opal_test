@@ -1,0 +1,2 @@
+module FoobarHelper
+end
